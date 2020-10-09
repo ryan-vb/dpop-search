@@ -1,4 +1,4 @@
-from selenium import webdriver
+
 from selenium.webdriver.common.keys import Keys
 
 
@@ -15,6 +15,7 @@ def dpop_search(driver, search_term):
 
 
 if __name__ == "__main__":
+    from selenium import webdriver
     driver = webdriver.Chrome()
     page_html = dpop_search(driver, "main squeeze eyeshadow palette")
     driver.close()
